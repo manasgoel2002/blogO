@@ -1,0 +1,248 @@
+/* Custom Styles for Blog Website */
+
+/* Body and General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #3498db;
+    border-bottom: 2px solid #2980b9;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+/* Hero Section Styles */
+.hero {
+    
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Testimonial Styles */
+.testimonial {
+    background-color: #898121;
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.testimonial-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chat-bubble {
+    background-color: #E7B10A;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 10px;
+    color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.chat-container:hover .chat-bubble {
+    transform: translateX(0%);
+}
+
+/* Share and Blog List Styles */
+.share-section {
+    background-color: #e74c3c;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.blog-list {
+    background-color: #9b59b6;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/* Blog Post List Styles */
+#blogPostList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3498db;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-text {
+    color: #555;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+/* Blog Post Page Styles */
+.card-body {
+    border-radius: 8px;
+    padding: 30px;
+}
+
+/* Newsletter Subscription Section Styles */
+.newsletter {
+    background-color: #e67e22;
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e67e22;
+}
+
+/* About Us and Contact Section Styles */
+#about,
+#contact {
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#about {
+    background-color: #9b59b6;
+}
+
+#contact {
+    background-color: #3498db;
+}
+
+#about h2,
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#about p,
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Add some gradient background for the website */
+body {
+    background: linear-gradient(45deg, #3498db, #9b59b6, #f39c12, #e74c3c, #27ae60, #e67e22);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
